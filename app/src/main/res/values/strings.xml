@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Trolli</string>
+    <string name="tinggi_badan">Tinggi badan</string>
+    <string name="berat_badan">Berat badan</string>
+</resources>

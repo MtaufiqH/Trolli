@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout"
+    android:paddingTop="16dp">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etDropDownText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textColorHint="#7A7A7A"
+        app:errorEnabled="true"
+        app:boxStrokeWidth="1.5dp"
+        app:boxBackgroundColor="@android:color/transparent"
+        app:layout_constraintEnd_toStartOf="@+id/spnDropDownUnit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:inputType="numberDecimal"
+            android:paddingTop="30dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/spnDropDownUnit"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        style="@style/BaseDropdownLayout"
+        app:hintTextColor="#7A7A7A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <AutoCompleteTextView
+            android:id="@+id/etDropDownUnit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="30.5dp"
+            android:maxLines="1"
+            android:background="@drawable/bg_edittext"
+            android:drawableEnd="@drawable/ic_drop_down"
+            android:inputType="none" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+</merge>

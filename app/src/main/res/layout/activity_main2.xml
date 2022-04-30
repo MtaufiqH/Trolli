@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context="com.taufiq.core.utils.customview.MainActivity2">
+
+
+    <com.taufiq.core.utils.customview.UnitField
+        android:id="@+id/etUnit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="@string/berat_badan"/>
+
+    <com.taufiq.core.utils.customview.UnitField
+        android:id="@+id/etUnit2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="@string/tinggi_badan"/>
+
+    <com.taufiq.core.utils.customview.UnitFieldDropDown
+        android:id="@+id/etDropDown"
+        android:layout_width="match_parent"
+        android:hint = "Ukuran baju"
+        android:layout_height="wrap_content"/>
+
+    <com.taufiq.core.utils.customview.ProgressButton
+        android:id="@+id/btnProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:allCaps = "false"
+        android:layout_marginTop="16dp"
+        style="@style/Button.Blue"
+        app:text = "Submit" />
+
+    <TextView
+        android:id="@+id/tvBerat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="10kg"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>
